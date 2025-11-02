@@ -1,0 +1,70 @@
+body {
+  background-color: #1f1f1f;
+  color: white;
+}
+.imazhi-ne-blerje{
+    width: 40%;
+  height: auto;
+  border-radius: 10px;
+  float: right;
+  margin: 0 0 10px 20px;
+}
+.purchase-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.purchase-modal-content {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.purchase-modal-content input::placeholder{
+  color: white;
+}
+
+.purchase-modal-content input,
+.purchase-modal-content input,
+.purchase-modal-content textarea {
+  width: 50%;
+  padding: 10px 12px;
+  background-color: #333;
+
+  margin-bottom: 20px;
+  border: 1.5px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  color: #fff;
+}
+
+.purchase-modal-content input:focus,
+.purchase-modal-content input:focus,
+.purchase-modal-content textarea:focus {
+  border-color: #b078d2;
+
+  outline: none;
+}
+
+@media (max-width: 768px) {
+    .purchase-modal-content {
+    margin-top: 100px;
+  }
+
+}
+

@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  background-color: #191919;
+  height: 100vh;
+  color: white;
+  overflow-x: hidden;
+}
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  background-color: #191919;
+}
+
+.hero-layout {
+  position: relative;
+  gap: 0px; 
+  align-items: center;
+  justify-items: center;
+}
+
+.seats.top{
+  width: 100%;
+  height: auto;
+}
+.seats.bottom {
+  width: 100%;
+  height: auto;
+  margin-top: -300px;
+}
+.seats.left,
+.seats.right {
+  height: 80%;
+  width: auto;
+}
+
+.hero-content {
+  max-width: 800px;
+  color: white;
+  z-index: 10;
+}
+
+.hero-content h1 {
+  font-size: 4.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero-content span {
+  color: #D69ADE;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  max-width: 450px;
+  margin: 0 auto;
+  background: #2c2c2c;
+  padding: 5px 10px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border: 1px solid #ffffff55;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border-radius: 15px;
+  border: none;
+  background: #2c2c2c;
+  color: white;
+  outline: none;
+}
+
+.search-box button {
+  background-color: #D69ADE;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.search-box button img {
+  width: 24px;
+}
+
+
+.ball-container {
+  position: absolute;
+  bottom: -250px;
+  right: 30px;
+  z-index: 5;
+}
+
+.ball {
+  width: 100%;
+  height: auto;
+}
+
+
+.fanpass-section {
+  font-family: 'Georgia', serif;
+  color: #fff;
+  padding: 200px 10px 100px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.intro-text h2 {
+  font-size: 50px;
+  font-family: d;
+  margin-bottom: 20px;
+}
+
+.intro-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.stadium-img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+}
+
+.text-block h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-block p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.features {
+  margin-top: 60px;
+}
+
+.features h2 {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.feature-grid {
+  display: flex;
+  flex-wrap: row;
+  gap: 40px;
+}
+
+.feature-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+
+.icon-box {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 20px;
+  flex-shrink: 0;
+  border: 2px solid #b56eff;
+}
+
+.feature-text h3 {
+  font-size: 20px;
+  margin: 0 0 5px;
+  color: #fff;
+}
+
+.feature-text p {
+  color: #ccc;
+  font-size: 15px;
+  margin: 0;
+}
+
+.pjesa2 {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.pjesa2 img {
+  max-width: 100%;
+}
+
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 70px;
+}
+
+.card {
+  width: 380px;
+  height: 500px;
+  margin-top: 50px;
+  background: white;
+  border-radius: 50px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 4px 100px 20px #d69ade74;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  position: absolute;
+  background: none;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.title {
+  padding-left: 20px;
+  background: none;
+  font-family: sans-serif;
+  color: #d69adebd;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.value {
+  padding-left: 20px;
+  background: none;
+  font-family: sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #d69ade;
+}
+
+.hot {
+  margin: 30px 25px;
+  font-family: sans-serif;
+  display: inline-block;
+  background: rgba(255, 187, 0, 0.887);
+  color: #825f1e;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card-container h1 {
+  text-align: center;
+  font-family: inirsa;
+  font-size: 100px;
+}
+
+
+.faq-container {
+  font-size: 28px;
+  width: 80%;
+  margin: 10px auto;
+  padding: 50px;
+}
+
+.faq-item {
+  margin-bottom: 60px;
+  border-bottom: 1px solid #444;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  background: #1a1a1a;
+}
+
+.faq-answer {
+  display: none;
+  padding: 15px;
+  background: #191919;
+  font-weight: thin;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow.open {
+  transform: rotate(180deg);
+}
+
+
+@media (max-width: 1024px) {
+  .hero{
+    top: 100px;
+    margin-bottom: 20px;
+  }
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    font-size: 16px;
+  }
+
+  .search-box button {
+    width: 50px;
+    height: 45px;
+  }
+
+.search-box button img {
+  width: 24px;
+}
+
+  .seats.left,
+  .seats.right,
+  .seats.top,
+  .seats.bottom {
+    display: none;
+  }
+
+  .ball {
+    width: 180px;
+    bottom: -100px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content {
+    margin-top: 0px;
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .fanpass-section {
+    padding: 100px 10px 50px;
+  }
+
+  .intro-text h2 {
+    font-size: 32px;
+  }
+  .intro-content{
+     display: block;
+  }
+  .feature-grid {
+    flex-direction: column;
+  }
+
+  .feature-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .icon-box {
+    margin-bottom: 10px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 90%;
+    height: auto;
+    padding-bottom: 150px;
+  }
+
+  .card img {
+    width: 60%;
+    bottom: 20px;
+  }
+
+  .card-container h1 {
+    font-size: 50px;
+  }
+
+  .faq-container {
+    width: 95%;
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .search-box input {
+    font-size: 14px;
+    padding: 0px 20px;
+  }
+
+  .search-box button {
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 40px;
+  }
+  .search-box button img {
+  width: 20px;
+}
+
+  .feature-text h3 {
+    font-size: 18px;
+  }
+
+  .feature-text p {
+    font-size: 14px;
+  }
+
+  .faq-container {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .card-container h1 {
+    font-size: 36px;
+  }
+}

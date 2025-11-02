@@ -1,0 +1,167 @@
+body {
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    
+
+
+.events-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 50px;
+  gap: 40px;
+}
+
+.sidebar {
+  flex: 0 0 220px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  font-size: 14px;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.sidebar label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.sidebar select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: #121212;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.search-bar {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  background-color: #121212;
+  color: white;
+  outline: none;
+}
+
+
+.event-list {
+  max-width: 700px; 
+  padding: 0;
+}
+
+    .event-list h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .event {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end; 
+    }
+    
+    .event-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end; 
+    }
+    
+    .event img {
+      width: 40%;
+      height: auto;
+      border-radius: 10px;
+      margin-left: 20px;
+    }
+    
+    .event h2 {
+      margin: 10px 0;
+    }
+    
+    .buy-button {
+      background-color: #D69ADE;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      width: fit-content;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    
+    .buy-button:hover {
+      background-color: darkviolet;
+    }
+
+
+    .filter-group {
+  border: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+.filter-group legend {
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.checkbox-label {
+  display: block;
+  margin-bottom: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.checkbox-label input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+#timeRange {
+  width: 100%;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+    
+    @media (max-width: 900px) {
+  .events-container {
+    flex-direction: column;
+    padding: 50px 20px;
+  }
+  .sidebar {
+    margin-top: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .event-list {
+    max-width: 100%;
+  }
+  .event img {
+    width: 50%;
+  }
+}
